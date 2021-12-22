@@ -19,6 +19,20 @@ h2{
     font-style: bold;
     font-size: 32pt;
 }
+.playbutton{
+    display: inline-block;
+    font-size: 48pt;
+    background-color: rgb(54, 91, 112);
+    text-align: center;
+    height: auto;
+}
+.spacer{
+    margin-top: 5em;
+    background-color: grey;
+    height: 1px;
+    width: auto;
+    margin-bottom: 5em;
+}
 p.desc{
     font-style: bold;
     font-size: 16pt;
@@ -33,8 +47,7 @@ img.image1{
 }
 .img {
     display: inline-block;
-    
-    height: 300px;
+    height: 200px;
     width: auto;
     justify-content: space-between;
 }

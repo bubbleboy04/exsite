@@ -2,7 +2,7 @@
 <html>
     <head>
         <title> Matthew Low Portfolio </title>
-        <h1 class="titleBanner"> Early Game Projects </h1>
+        <h1 class="titleBanner" style="text-align: center;"> Matthew Low Digital Portfolio </h1>
         <link rel="stylesheet" href="css/style.css">
     </head>
     
@@ -33,13 +33,48 @@
             <li> Still currently working and developing further projects
         </h2>
 
-        <div>
-            <br>
+        <div class="spacer">
             <br>
         </div>
+            
+        
         <h1 class="subhead">
             Football Quarterback Simulator
         </h1>
+        <div style="text-align: center;">
+            <img src = images/football1.PNG class="img">
+            <img src = images/football2.PNG class="img">
+            <img src = images/football3.PNG class="img">
+            <img src = images/football5 class="img">
+        </div>
+        <h2>
+            <li> First completed solo project
+            <li> Uses Unity's physics RayCast systems and RigidBody systems to create a robust ball throwing mechanic
+            <li> Further features include color customization, receiver route selection, and proper difficulty scaling
+            <li> Futher plans to make features more robust with a future remake of this game
+            <li> Project began with an extremely basic and simple method to throw the ball in the form of moving the ball
+                in a straight line originating from the player GameObject
+            <li> Early versions also included defense AI that had precoded paths and timers to know when to begin chasing the receivers
+            <li> In an attempt to make the ball travel in a more convincing arc path, RigidBodies in Unity were implemented in order to add forces to the ball
+            <li> Angle of Reach formula was used to calculate the angle the ball should travel at to reach an appropriate distance given a fixed velocity
+            <li> Defense AI was retweaked later in development, removing the precoded timers and using a function that would return true if the receiver began moving away from the defender
+            <li> With a randomly generated delay, the new defense AI is much more reactive and allows for a wider variety of route implementations
+            <br>
+            
+        </h2>
+        
+        <div style="text-align: center;">
+            <p class="playbutton">
+                <a href="football_index.html"> Play Football QB Sim </a>
+            </p>
+        </div>
+    
+
+        <div class="spacer">
+            <br>
+        </div>
+        <script src="scripts/tutorialScript.js"></script>
+
     </body>
 
 </html>
