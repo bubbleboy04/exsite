@@ -1,0 +1,54 @@
+.titleBanner{
+    display: block;
+    margin-top: 0%;
+    height: 20;
+    width: auto;
+    color:green;
+    text-align: left;
+    background-color: grey;
+    color: whitesmoke;
+    text-align: left;
+}
+h2{
+    color:whitesmoke;
+    text-align: center;
+}
+.subhead{
+    color:white;
+    text-align: center;
+    font-style: bold;
+    font-size: 32pt;
+}
+p.desc{
+    font-style: bold;
+    font-size: 16pt;
+    color: rgb(255, 255, 255);
+    background-color: rgb(2, 93, 2);
+    text-align: center;
+}
+img.image1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img {
+    display: inline-block;
+    
+    height: 300px;
+    width: auto;
+    justify-content: space-between;
+}
+.generalUnity{
+    display: flex;
+    margin-top: 1em;
+    margin-left: 25%;
+    width: 500px;
+    height: auto;
+}
+.generalCode{
+    display: flex;
+    margin-top: 1em;
+    margin-left: 50%;
+    width: 500px;
+    height: auto;
+}
