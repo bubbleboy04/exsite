@@ -1,80 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Matthew Low Portfolio </title>
-        <h1 class="titleBanner" style="text-align: center;"> Matthew Low Digital Portfolio </h1>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
     
-    <body>
-        <style>
-            body{
-                background-color: black;
-            }
-        </style>
-
         
-        <h1 class="subhead">
-            Unity Development
-            <br>
-        </h1>
-        <div style="text-align: center;">
-            <img src = images/general_blender.PNG class="img">
-            <img src = images/general_unity.PNG class="img">
-            <img src = images/general_script.PNG class="img">
-        </div>
 
-        <h2>
-            <li> Began Unity development in early 2020 with friends from university classes.
-            <li> Before we completed our initial project, many students left the project to dedicate more to school work.
-            <li> I decided to press on and continue to push on to sharpen my skills with Unity
-            <li> Became extremely well versed in writing scripts in C# and began more ambitious solo projects
-            <li> Began to teach myself the core of Unity rendering, physics technologies, and other advanced systems Unity contained
-            <li> Still currently working and developing further projects
-        </h2>
-
-        <div class="spacer">
-            <br>
-        </div>
+    <h1><text class="text">Matthew Low - Portfolio</text></h1>  
+    <header> 
+        <nav>
+            <ul class="links">
+                <li onclick="footballButton();"><a href="#fooby" >Football</a></li>
+                <li><a href="#fooby">Spookems</a></li>
+                <li><a href="#fooby">Development</a></li>
+                <li><a href="#fooby">Contact</a></li>
+            </ul>
             
-        
-        <h1 class="subhead">
-            Football Quarterback Simulator
-        </h1>
+        </nav>
+    </header>
+    <div id="home">
+        <span style="background-color: black;">Unity Projects </span><br>
+        <span style="color:white;">Click on the tabs above to view games <br>
+        Click on Development tab to view Development process <br></span>
+
+    </div>
+    <div id="info">
         <div style="text-align: center;">
-            <img src = images/football1.PNG class="img">
-            <img src = images/football2.PNG class="img">
-            <img src = images/football3.PNG class="img">
-            <img src = images/football5 class="img">
+            <text id="gameTitle">
+                
+            </text>
         </div>
-        <h2>
-            <li> First completed solo project
-            <li> Uses Unity's physics RayCast systems and RigidBody systems to create a robust ball throwing mechanic
-            <li> Further features include color customization, receiver route selection, and proper difficulty scaling
-            <li> Futher plans to make features more robust with a future remake of this game
-            <li> Project began with an extremely basic and simple method to throw the ball in the form of moving the ball
-                in a straight line originating from the player GameObject
-            <li> Early versions also included defense AI that had precoded paths and timers to know when to begin chasing the receivers
-            <li> In an attempt to make the ball travel in a more convincing arc path, RigidBodies in Unity were implemented in order to add forces to the ball
-            <li> Angle of Reach formula was used to calculate the angle the ball should travel at to reach an appropriate distance given a fixed velocity
-            <li> Defense AI was retweaked later in development, removing the precoded timers and using a function that would return true if the receiver began moving away from the defender
-            <li> With a randomly generated delay, the new defense AI is much more reactive and allows for a wider variety of route implementations
-            <br>
+
+        
+        <div style="text-align:center;" class = "container">
+            <div style="display: inline-block;"  class="active">
+                <img src="images/football1.PNG" id="mainImage">
+                <text id="imageDesc"> First Development Stage </text>
+            </div>
             
-        </h2>
-        
-        <div style="text-align: center;">
-            <p class="playbutton">
-                <a href="football_index.html"> Play Football QB Sim </a>
-            </p>
+            
+            <ul id="col"  class="active">
+                <li><img src="images/football1.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage0">
+                <li><img src="images/football2.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage1">
+                <li><img src="images/football3.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage2">
+                <li><img src="images/football4_2.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage3">
+                <li><img src="images/football5.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage4">
+            </ul>
         </div>
+    </div>
     
 
-        <div class="spacer">
-            <br>
-        </div>
-        <script src="scripts/tutorialScript.js"></script>
-
-    </body>
-
+    
+    <script src="scripts/home.js";></script>
+</body>
 </html>
