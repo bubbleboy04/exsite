@@ -16,47 +16,35 @@
     <header> 
         <nav>
             <ul class="links">
-                <li onclick="footballButton();"><a href="#fooby" >Football</a></li>
-                <li><a href="#fooby">Spookems</a></li>
-                <li><a href="#fooby">Development</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="football_index.html">Football QB</a></li>
+                <li><a href="ghost_index.html">Poltergeist</a></li>
+                <li><a href="dev_index.html">Development</a></li>
                 <li><a href="#fooby">Contact</a></li>
             </ul>
             
         </nav>
     </header>
+
     <div id="home">
-        <span style="background-color: black;">Unity Projects </span><br>
+        <span style="font-weight: bolder; font-size: 36pt; color: green;">Unity Projects </span><br>
+        <span class="intro">
+            I am a self taught and solo developer using the Unity Game Engine.<br>
+            Since October 2020, I began many projects with other game devs that never saw the light of day. <br>
+            Once I began working solo, I have two major completed projects that have been catalouged and document here. <br>
+            In my effort to extend my programming ability by learning CSS, HTML, and basic JavaScript, I have created this Website here <br>
+        </span>
+    </div>
+
+    <div id="home" style="display: block; ">
+        
         <span style="color:white;">Click on the tabs above to view games <br>
         Click on Development tab to view Development process <br></span>
-
     </div>
-    <div id="info">
-        <div style="text-align: center;">
-            <text id="gameTitle">
-                
-            </text>
-        </div>
-
-        
-        <div style="text-align:center;" class = "container">
-            <div style="display: inline-block;"  class="active">
-                <img src="images/football1.PNG" id="mainImage">
-                <text id="imageDesc"> First Development Stage </text>
-            </div>
-            
-            
-            <ul id="col"  class="active">
-                <li><img src="images/football1.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage0">
-                <li><img src="images/football2.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage1">
-                <li><img src="images/football3.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage2">
-                <li><img src="images/football4_2.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage3">
-                <li><img src="images/football5.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage4">
-            </ul>
-        </div>
-    </div>
-    
 
     
+    
+
     <script src="scripts/home.js";></script>
 </body>
 </html>

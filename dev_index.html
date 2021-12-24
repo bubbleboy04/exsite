@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    
+        
+
+    <h1><text class="text">Matthew Low - Portfolio</text></h1>  
+    <header> 
+        <nav>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="football_index.html">Football QB</a></li>
+                <li><a href="ghost_index.html">Poltergeist</a></li>
+                <li><a href="dev_index.html">Development</a></li>
+                <li><a href="#fooby">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    
+    <div>
+        <ul>
+            <li> Football QB Sim was the first completed solo project released</li>
+            <img src="/images/football1.PNG">
+            <li> Project began with a basic ball throwing mechanism that translated a ball object in a straight line from an elevated position</li>
+            <li> Tested colliders on the ball and on a receiver standin to see how Unity would handle the catching of the ball</li>
+            <img src="#receivermodel">
+            <li> Created very basic receiver models with in-engine GameObjects for further testing.
+            <li> Precoded routes by using coroutines in script that uses percentage of remaining field and receiver rotation
+            <img src="#routes_ss">
+            <li> Began adding more set decoration to make the environment more visually appealing
+            
+            <li> 
+
+            <li> In an effort to make the throwing more realistic, I started looking into new methods to handle the ball throw.
+            <li> Had to find a solution that would result in short throws having a low arc and deeper throws having a higher arc.
+            <li> Once fixed velocity throwing methods had been exhausted, I began looking into different physics concepts for the desired result.
+            <li> Angle of Reach formula was found and applied with a fixed velocity, which resulted in higher arcs and more realistic throws.
+            <li> With an accurate throwing mechanic, the controlled QB could receive a character model and be placed on the field.
+            
+        </ul>
+    </div>
+    
+
+    
+    <script src="scripts/home.js";></script>
+</body>
+</html>
