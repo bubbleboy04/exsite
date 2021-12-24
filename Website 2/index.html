@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Builder</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    
+        
+
+    <h1><text class="text">Matthew Low - Portfolio</text></h1>  
+    <header> 
+        <nav>
+            <ul class="links">
+                <li onclick="footballButton();"><a href="#fooby" >Football</a></li>
+                <li><a href="#fooby">Spookems</a></li>
+                <li><a href="#fooby">Development</a></li>
+                <li><a href="#fooby">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <div id="home">
+        <span style="background-color: black;">Unity Projects </span><br>
+        <span style="color:white;">Click on the tabs above to view games <br>
+        Click on Development tab to view Development process <br></span>
+
+    </div>
+    <div id="info">
+        <div style="text-align: center;">
+            <text id="gameTitle">
+                
+            </text>
+        </div>
+
+        
+        <div style="text-align:center;" class = "container">
+            <div style="display: inline-block;"  class="active">
+                <img src="images/football1.PNG" id="mainImage">
+                <text id="imageDesc"> First Development Stage </text>
+            </div>
+            
+            
+            <ul id="col"  class="active">
+                <li><img src="images/football1.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage0">
+                <li><img src="images/football2.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage1">
+                <li><img src="images/football3.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage2">
+                <li><img src="images/football4_2.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage3">
+                <li><img src="images/football5.PNG" onclick="imageClick(this);" class="sideImage" id="sideImage4">
+            </ul>
+        </div>
+    </div>
+    
+
+    
+    <script src="scripts/home.js";></script>
+</body>
+</html>
